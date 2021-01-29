@@ -1,5 +1,5 @@
 #include "spenhbuff.h"
-#include "enh_errdef.h"
+#include "enh_const.h"
 #include <string.h>
 #include <stdio.h>
 
