@@ -77,4 +77,4 @@ Real time Detector로는 아직 부족.
 
 
 
-+ 논문 링크: https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf
++ 논문 링크: https://arxiv.org/pdf/1506.01497.pdf
