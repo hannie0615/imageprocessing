@@ -1,7 +1,10 @@
+
 # Faster R-CNN
 
+
 ------------
-2016년 1월 , 논문 제목: Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks
+2016년 1월 , 제목 : Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks
+
 
 ## 0. Abstract
 
