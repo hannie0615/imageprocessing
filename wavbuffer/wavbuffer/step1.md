@@ -2,31 +2,30 @@
 ### C언어:
 -----------------
 
-
-  // ConsoleApplication2.cpp : DLL 응용 프로그램을 위해 내보낸 함수를 정의합니다.
+// ConsoleApplication2.cpp : DLL 응용 프로그램을 위해 내보낸 함수를 정의합니다.
   
-  #include "stdafx.h"
-  #include "main.h"
-  #include <limits>
-  #include <list>
-  #include <fstream>
-  #include <iostream>
-  #include <sstream>
-  #include <time.h>
-  #include <stdio.h>
-  #include <stdlib.h>
-  #include <math.h>
-  #include <windows.h>
-  #include <string>
-  using namespace std;
-  #include "spenhbuff.h"
-  #include "buffercnt.h"
-  #include "enh_const.h"
-  #include "bessel.h"
-  #include "wavread.h"
-  // Main routine
-  // int main(int argc, char **argv)
-  int WAVBUFFER_API _stdcall main(int num){
+  	#include "stdafx.h"
+  	#include "main.h"
+  	#include <limits>
+  	#include <list>
+  	#include <fstream>
+  	#include <iostream>
+  	#include <sstream>
+  	#include <time.h>
+  	#include <stdio.h>
+  	#include <stdlib.h>
+  	#include <math.h>
+  	#include <windows.h>
+  	#include <string>
+  	using namespace std;
+  	#include "spenhbuff.h"
+  	#include "buffercnt.h"
+  	#include "enh_const.h"
+  	#include "bessel.h"
+  	#include "wavread.h"
+  	// Main routine
+  	// int main(int argc, char **argv)
+  	int WAVBUFFER_API _stdcall main(int num){
 	char *infilename="sp0764_computer_sn0.wav";
 	//char *outfilename="sp0764_computer_sn0_enh.wav"; 
 	
@@ -101,24 +100,24 @@
 	int result;
 	result = enhau[num];
 	return result;
-}
+	}
 
 
 ### Python: 
 -----------------
 
-"""
-call dll file
-"""
-from ctypes import *
-import os
-import numpy as np
-import time
-# 로컬 파일
-path2 = 'C:/Users/NO. 1/Documents/WorkHome/wavbuffer/Debug/wavbuffer.dll'
-input = 'sp0764_computer_sn0.wav'
-dll2 = windll.LoadLibrary(path2)
-v = list(range(2200,2300)) # 임의로 정한 구간 (2000,2100)
-for i in v:
-    print(dll2.main(i))
 
+call dll file
+
+	from ctypes import *
+	import os
+	import numpy as np
+	import time
+	path2 = 'C:/Users/NO. 1/Documents/WorkHome/wavbuffer/Debug/wavbuffer.dll'
+	input = 'sp0764_computer_sn0.wav'
+	dll2 = windll.LoadLibrary(path2)
+	v = list(range(2200,2300)) # 임의로 정한 구간 (2000,2100)
+	for i in v:
+   		 print(dll2.main(i))
+
+이와 같다.
